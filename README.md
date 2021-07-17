@@ -1,3 +1,17 @@
+# CHANGES FROM SOURCE
+
+Modified this track finder for use my live streams.
+
+Some changes include:
+
+- `Fixes the server launching (it wasn't launching on my computer when running the code).`
+
+- `Scrolling text loops, rather than black space showing inbetween text rewinds.`
+
+- `Un-square album arts (yes there is such a thing on spotify??) will zoom in to fill the square.`
+
+- `General styling and layout improvements over original to match my streams.`
+
 # Spotify-track-info
 
 Node spotify track info that generates a `currentSong.txt` that can be used on OBS to show the current spotify song.

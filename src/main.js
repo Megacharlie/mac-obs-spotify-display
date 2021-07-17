@@ -1,7 +1,8 @@
 const spotify = require('spotify-node-applescript');
 const path = require('path');
+const server = require('./server-old')
 const fs = require('fs');
-const updateEvery = 5000;
+const updateEvery = 500;
 let previousTrack;
 
 function getTrack() {
@@ -16,7 +17,9 @@ function getTrack() {
             Object.keys(track).forEach(key => {
                 const regex = new RegExp('{{' + key + '}}', 'g');
                 music = music.replace(regex, track[key]);
+                music = music.replace(" - ",'\n');
             });
+
             console.log(music);
             fs.writeFileSync(path.join(__dirname, '../currentSong.txt'), music);
         }

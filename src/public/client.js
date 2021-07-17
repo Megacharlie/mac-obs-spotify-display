@@ -2,7 +2,9 @@ var spotifyTemplate = Handlebars.compile(document.getElementById('spotify-album'
 var rootEl = document.getElementById('app');
 var marqueeSelector = '.entry__scrollable';
 var marqueeContentSelector = '.entry__content';
+var marqueeContentCopy = '.entry__content__copy';
 var currentTrack;
+var storecontent = " "
 
 function getJson(url, callback) {
     var request = new XMLHttpRequest();
@@ -37,14 +39,22 @@ function getJson(url, callback) {
 (function marquee() {
     var marqueeEl = document.querySelector(marqueeSelector);
     var scrollEl = document.querySelector(marqueeContentSelector);
+
     if (marqueeEl) {
         var maxWidth = marqueeEl.offsetWidth;
         var contentWidth = scrollEl.offsetWidth;
         if (contentWidth > maxWidth) {
+
+            if(storecontent!=scrollEl.innerHTML){
+                scrollEl.innerHTML = scrollEl.innerHTML + " " + scrollEl.innerHTML + " "
+                storecontent = scrollEl.innerHTML
+                var contentWidth = scrollEl.offsetWidth;
+            }
+
             var indent = parseInt(scrollEl.style.marginLeft, 10) || 0;
             --indent;
-            if (indent <= -1 * contentWidth) {
-                indent = maxWidth;
+            if (indent <= -1 * contentWidth/2) {
+                indent = 10; //maxWidth; 
             }
             scrollEl.style.marginLeft = indent + 'px';
         }

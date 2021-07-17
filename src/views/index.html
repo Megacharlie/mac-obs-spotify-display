@@ -11,7 +11,9 @@
     <div id="app"></div>
     <script id="spotify-album" type="text/x-handlebars-template">
         <div class="entry">
-            <img src="{{artwork_url}}" />
+            <div class="imageholder">
+                <img src="{{artwork_url}}" />
+            </div>
             <div class="entry__scrollable">
                 <div class="entry__content">
                     {{artist}} - {{name}}

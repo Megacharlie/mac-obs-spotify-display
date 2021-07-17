@@ -1,31 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body {
-    /* background: black; */
-    margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 38px;
+ body {
+     margin: 0;
+     color: white;
+     font-family: 'Da_Guy', sans-serif;
+     font-size: 50px;
 }
-
-#app {
-    width: 500px;
-    margin: auto;
+ #app {
+     width: 500px;
+     margin: auto;
+     background-color: black;
+     padding: 5px;
+     border-radius: 12px;
 }
-
-#app img {
-    width: 100%;
+ #app img {
+     width: 100%;
+     height: 100%;
+     border-radius: 7px;
+     object-fit: cover;
 }
-
-.entry__scrollable {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+ .imageholder {
+     width: 100%;
+     border-radius: 7px;
+     height: 500px;
+     box-sizing: border-box;
+     padding: 5px;
 }
-
-.entry__content {
-    position: relative;
-    min-width: 100%;
-    text-align: center;
-    float: left;
-    white-space: nowrap;
+ .entry__scrollable {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+}
+ .entry__content {
+     position: relative;
+     min-width: 100%;
+     text-align: center;
+     float: left;
+     white-space: nowrap;
+     display: inline-block;
+     height: 50px;
+     margin-bottom: 5px;
+     margin-top: 5px;
 }
