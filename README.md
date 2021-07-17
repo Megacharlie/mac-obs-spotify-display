@@ -12,6 +12,8 @@ Some changes include:
 
 - `General styling and layout improvements over original to match my streams.`
 
+![Screenshot_2021-07-17 Spotify](https://user-images.githubusercontent.com/52173511/126030096-280087e5-05fe-4215-9993-d079ecebe9a4.png)
+
 Thanks so much for the original source @DPr00f!!
 
 # Spotify-track-info
