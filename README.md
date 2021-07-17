@@ -12,11 +12,15 @@ Some changes include:
 
 - `General styling and layout improvements over original to match my streams.`
 
+Thanks so much for the original source @DPr00f!!
+
 # Spotify-track-info
 
 Node spotify track info that generates a `currentSong.txt` that can be used on OBS to show the current spotify song.
 
 It can also serve the content to be used on browser source. Just point the location to http://localhost:9090
+
+Probably should have to point this out but this only works on MacOS. duh
 
 # Install
 
